@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F8F9FA">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fitness Tracker"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#FF6B6B"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Calories -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:layout_margin="8dp">
+
+                <TextView
+                    android:id="@+id/tvCalories"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Calories: 0"
+                    android:textSize="16sp"
+                    android:textColor="#2C3E50"
+                    android:layout_marginBottom="8dp" />
+
+                <EditText
+                    android:id="@+id/etCalories"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter calories"
+                    android:inputType="number"
+                    android:layout_marginBottom="8dp"
+                    android:padding="8dp"
+                    android:background="#F5F5F5" />
+
+                <Button
+                    android:id="@+id/btnAddCalories"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add Calories"
+                    android:backgroundTint="#FF6B6B"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <!-- Steps -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:layout_margin="8dp">
+
+                <TextView
+                    android:id="@+id/tvSteps"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Steps: 0"
+                    android:textSize="16sp"
+                    android:textColor="#2C3E50"
+                    android:layout_marginBottom="8dp" />
+
+                <EditText
+                    android:id="@+id/etSteps"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter steps"
+                    android:inputType="number"
+                    android:layout_marginBottom="8dp"
+                    android:padding="8dp"
+                    android:background="#F5F5F5" />
+
+                <Button
+                    android:id="@+id/btnAddSteps"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add Steps"
+                    android:backgroundTint="#4ECDC4"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <!-- Water -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:layout_margin="8dp">
+
+                <TextView
+                    android:id="@+id/tvWater"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Water: 0"
+                    android:textSize="16sp"
+                    android:textColor="#2C3E50"
+                    android:layout_marginBottom="8dp" />
+
+                <EditText
+                    android:id="@+id/etWater"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter water (ml)"
+                    android:inputType="number"
+                    android:layout_marginBottom="8dp"
+                    android:padding="8dp"
+                    android:background="#F5F5F5" />
+
+                <Button
+                    android:id="@+id/btnAddWater"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add Water"
+                    android:backgroundTint="#45B7D1"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reset All Data"
+        android:backgroundTint="#FF4757"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

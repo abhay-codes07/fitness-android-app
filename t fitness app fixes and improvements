@@ -1,0 +1,3 @@
+[33m6e1323f[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m Fix: Simplify XML layout to fix Binary XML parsing error
+[33mc8f4945[m Fix: Add comprehensive error handling and CardView dependency
+[33mdf28e74[m Initial commit: Create fitness Android app
